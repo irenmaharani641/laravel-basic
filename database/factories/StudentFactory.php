@@ -21,5 +21,5 @@ class StudentFactory extends Factory
     'name' => fake()->name(),
     'nim' => fake()->numerify('###########'),
         ];
-    }
+    } 
 }

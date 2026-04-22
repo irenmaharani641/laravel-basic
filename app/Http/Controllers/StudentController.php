@@ -16,6 +16,7 @@ class StudentController extends Controller
         return view('Student.index', [
             'title' => ' STUDENT',
             'students' => Student::latest()->get(),
+            // ' students' => Student:: orderBy ('name', 'ass')->get(),
         ]);
     }
 
@@ -45,7 +46,7 @@ class StudentController extends Controller
     ]);
 
     Student::create($validated);
-    return to_route('Student.index')->withSuccess('Data berhasil di tambahkan');
+    return to_route('Student.index')->withSuccess('Data berhasil di tambahkan'); 
     }
 
     /**

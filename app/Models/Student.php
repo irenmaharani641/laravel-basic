@@ -8,13 +8,10 @@ use Illuminate\Database\Eloquent\Attributes\Fillable;
 
 
 #[Fillable(['name', 'nim'])]
-
 class Student extends Model
 {
     /** @use HasFactory<\Database\Factories\StudentFactory> */
     use HasFactory;
 
-    protected $fillable = ['name','nim'];
-
-    protected $guarded =['id'];
+   
 }
